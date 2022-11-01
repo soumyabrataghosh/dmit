@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 # %%
-df=pd.read_excel('/Users/soumyabrata.ghosh/code-repo/dmit/CONVINCE-ORCHESTRA + PREDICOVID + IGSS data dictionary 25-OCT-2022.xlsx',sheet_name='CONVINCE-ORCHESTRA')
+#df=pd.read_excel('/Users/soumyabrata.ghosh/code-repo/dmit/CONVINCE-ORCHESTRA + PREDICOVID + IGSS data dictionary 25-OCT-2022.xlsx',sheet_name='CONVINCE-ORCHESTRA')
 # %% Read from Google Sheet
 sheet_id = '18uUJCYmS4-LtyBm-kPVzyl45iEGE6o_p88xW7pdxYkE'
 sheet_name = 'ORCHESTRAGlossary'

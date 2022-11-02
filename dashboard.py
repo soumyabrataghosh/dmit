@@ -25,7 +25,7 @@ styl = f'''<style>
     overflow-x: hidden;
     overflow-y: scroll;
 }}
-button.css-firdtp {{
+.stButton button {{
     position: fixed;
     bottom: 10%;
     right: 10%;

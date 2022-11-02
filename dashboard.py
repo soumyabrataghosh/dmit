@@ -68,9 +68,9 @@ with top_cols1:
             with st.expander('Explore variables'):
                 container = st.container()
                 container.write("Category: "+str(cat))
-                var_list = df_gs[df_gs['categories'] == cat][['question','CON-ORC_uui']].dropna().apply(tuple, axis=1)
+                var_list = df_gs[df_gs['categories'] == cat][['question','CON-ORC_uui','type']].dropna().apply(tuple, axis=1)
                 for var_item in var_list:
-                    selected_cat[cat][var_item[1]]=container.checkbox(var_item[0],key=str(cat)+str(var_item[1]))
+                    selected_cat[cat][var_item[1]]=container.checkbox(str(var_item[0]),help='type: '+str(var_item[2]),key=str(cat)+str(var_item[1]))
                 
 
             cat_no = cat_no + 1
